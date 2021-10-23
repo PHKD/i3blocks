@@ -1,0 +1,52 @@
+[kbdd_layout]
+command=~/.config/i3blocks/kbdd_layout/kbdd_layout
+interval=persist
+
+[volume]
+command=~/.config/i3blocks/volume-pulseaudio/volume-pulseaudio
+interval=persist
+SUBSCRIBE=1
+USE_ALSA_NAME=1
+
+# [calendar]
+# command=~/.config/i3blocks/calendar/calendar
+# interval=1
+# LABEL=
+# color=#FFFF00
+# DATEFMT=+%H:%M
+# SHORTFMT=+%H:%M
+# HEIGHT=180
+# WIDTH=220
+
+[iface]
+command=~/.config/i3blocks/iface/iface
+#LABEL=wlan0:
+#IFACE=wlan0
+#ADDRESS_FAMILY=inet6?
+color=#00FF00
+interval=10
+
+[wifi]
+command=~/.config/i3blocks/wifi/wifi
+# color=#00FF00
+INTERFACE=wlp1s0
+interval=10
+
+[pacman-updates]
+command=~/.config/i3blocks/arch-update/arch-update
+interval=36000
+markup=pango
+QUIET=true
+BASE_COLOR=#5FFF5F
+UPDATE_COLOR=#FFFF85
+
+[time]
+command=date '+[ %d/%m/%Y ]  [ %H:%M ]'
+color=#FFFF00
+interval=5
+
+[battery]
+command=~/.config/i3blocks/battery/battery
+label=:
+interval=30
+
